@@ -9,7 +9,7 @@ This project is a React app, originally based on an HTML/CSS practice project. I
 
 ## Live Demo
 
-Check out the live version of the app here: [Live Demo](your-link-here)
+Check out the live version of the app here: [Live Demo](https://mohammad-gh72.github.io/traverlly/)
 
 ## Tech Stack
 
