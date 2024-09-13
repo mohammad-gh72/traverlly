@@ -1,0 +1,44 @@
+section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 90vh;
+}
+
+.parent {
+  width: 100vw;
+  height: 90vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 5rem;
+}
+
+.parent h2 {
+  font-size: 4.8rem;
+}
+.parent h3 {
+  font-size: 3rem;
+  max-width: 45ch;
+  text-align: center;
+}
+
+.btn {
+  font-weight: 500;
+}
+
+.btn:hover {
+  cursor: pointer;
+  animation: btnHoverTransition 0.5s forwards ease-in-out;
+}
+
+@keyframes btnHoverTransition {
+  from {
+    background-color: #4c6e97;
+  }
+  to {
+    background-color: #27394e;
+  }
+}

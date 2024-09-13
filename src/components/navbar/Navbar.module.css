@@ -1,0 +1,58 @@
+.mainHead {
+  background-color: #131c27;
+}
+
+.mainHead__nav {
+  display: flex;
+  align-items: center;
+  width: 90%;
+  margin: auto;
+  min-height: 10vh;
+  padding: 1rem;
+}
+
+.logo {
+  transform-origin: center;
+  flex: 3 1 20rem;
+  font-family: "Pattaya", sans-serif;
+  font-weight: 400;
+}
+
+.mainHead h1:hover {
+  width: fit-content;
+  cursor: pointer;
+
+  animation: logoscale 0.1s forwards ease-in;
+}
+
+.mainHead__nav ul {
+  display: flex;
+  gap: 8rem;
+  flex: 2 1 20rem;
+  display: flex;
+  font-size: 2rem;
+}
+
+.mainHead__nav li:hover {
+  cursor: pointer;
+  animation: menuescale 0.2s forwards ease-in;
+}
+
+@keyframes menuescale {
+  from {
+    transform: scale(1);
+  }
+
+  to {
+    transform: scale(1.04);
+  }
+}
+@keyframes logoscale {
+  from {
+    transform: scale(1);
+  }
+
+  to {
+    transform: scale(1.1);
+  }
+}

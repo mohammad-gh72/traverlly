@@ -1,0 +1,45 @@
+{
+  "menue": [
+    { "name": "Services", "linkto": "", "id": "2" },
+    { "name": "Reviews", "linkto": "testimonial", "id": "1" },
+    { "name": "Contact", "linkto": "", "id": "3" }
+  ],
+  "hero": {
+    "id": "4",
+    "image": "/img/landing-page.jpg",
+    "title": "Travel Beyond Limits.",
+    "content": "Start your travel at an affordable price with Travelly Contact us now bellow.",
+    "buttons": [{ "btntext": "Book Now", "btnid": "41" }]
+  },
+  "testimonial": {
+    "id": "5",
+    "section_video": "/img/vid.mp4",
+    "section_title": "The Perfect Travelling Experience.",
+    "testimonials": [
+      {
+        "person_id": "6",
+        "person_image": "https://randomuser.me/api/portraits/men/1.jpg",
+        "person_name": "John Doe",
+        "person_overview": "John had an unforgettable experience booking his family vacation with Traverlly. The agency handled everything, from flights to hotel stays, ensuring a stress-free journey."
+      },
+      {
+        "person_id": "7",
+        "person_image": "https://randomuser.me/api/portraits/women/2.jpg",
+        "person_name": "Jane Smith",
+        "person_overview": "Jane appreciated how easy it was to plan her honeymoon with Traverlly. They provided excellent recommendations for romantic getaways and handled all the small details."
+      },
+      {
+        "person_id": "8",
+        "person_image": "https://randomuser.me/api/portraits/women/3.jpg",
+        "person_name": "Alice Johnson",
+        "person_overview": "Alice, a frequent solo traveler, found Traverlly’s custom itineraries perfect for her adventures. The agency's personalized approach made every trip unique and exciting."
+      },
+      {
+        "person_id": "9",
+        "person_image": "https://randomuser.me/api/portraits/men/4.jpg",
+        "person_name": "Michael Brown",
+        "person_overview": "Michael was impressed by Traverlly’s 24/7 customer support during his business trip. Whenever he needed to adjust his plans, they were quick to assist, making his travel stress-free."
+      }
+    ]
+  }
+}
