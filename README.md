@@ -1,9 +1,17 @@
-# React + Vite
+# React App with Fake API
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This project is a React app, originally based on an HTML/CSS practice project. It now fetches data from a fake API powered by `json-server`.
 
-Currently, two official plugins are available:
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
-# traverlly
+- React-based frontend
+- Fake API using `json-server` for data
+
+## Live Demo
+
+Check out the live version of the app here: [Live Demo](your-link-here)
+
+## Tech Stack
+
+- **React** for the frontend
+- **json-server** for the fake API
