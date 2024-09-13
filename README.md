@@ -1,11 +1,11 @@
-# React App with Fake API
+# React App with JSONBin API
 
-This project is a React app, originally based on an HTML/CSS practice project. It now fetches data from a fake API powered by `json-server`.
+This project is a React app, originally based on an HTML/CSS practice project. It now fetches data from an API powered by `jsonbin`.
 
 ## Features
 
 - React-based frontend
-- Fake API using `json-server` for data
+- Data fetched from `jsonbin`
 
 ## Live Demo
 
@@ -14,4 +14,4 @@ Check out the live version of the app here: [Live Demo](https://mohammad-gh72.gi
 ## Tech Stack
 
 - **React** for the frontend
-- **json-server** for the fake API
+- **jsonbin** for the API
