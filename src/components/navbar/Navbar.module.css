@@ -1,3 +1,9 @@
+.parent {
+  position: sticky;
+  top: 0;
+  z-index: 9999;
+}
+
 .mainHead {
   background-color: #131c27;
 }
@@ -38,6 +44,10 @@
   animation: menuescale 0.2s forwards ease-in;
 }
 
+.parent svg {
+  display: none;
+}
+
 @keyframes menuescale {
   from {
     transform: scale(1);
@@ -54,5 +64,29 @@
 
   to {
     transform: scale(1.1);
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .parent ul {
+    position: absolute;
+    top: 70px;
+    right: 40px;
+    display: flex;
+    flex-direction: column;
+    background-color: #131c27;
+    padding: 5rem;
+  }
+
+  .parent svg {
+    transform-origin: left bottom;
+    transform: translateX(-20px);
+    display: block;
+    fill: #fff !important;
+    right: 100px;
+  }
+  .parent svg:hover {
+    cursor: pointer;
+    transform: scale(1.02) translateX(-20px);
   }
 }

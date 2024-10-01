@@ -3,7 +3,7 @@ import HeroStyle from "./Hero.module.css";
 import { useEffect } from "react";
 import Button from "../../shared components/button/Button";
 import Loading from "../loading/Loading";
-const url = "http://localhost:9000/hero";
+const url = "";
 function Hero() {
   const [heroData, setHeroData] = useState(null);
   const [isLoad, setIsLoad] = useState(false);
@@ -11,13 +11,15 @@ function Hero() {
   async function getHeroData() {
     setIsLoad(true);
     try {
-      const response = await fetch(url);
+      const response = await fetch(url, {
+        headers: {},
+      });
       if (!response.ok) {
         throw new Error("something went wrong!");
       }
 
       const data = await response.json();
-      setHeroData(data);
+      setHeroData(data.record.hero);
     } catch (error) {
       console.log(error.message);
     } finally {
@@ -60,9 +62,5 @@ function HeroBody({ data }) {
 }
 
 function HeroBtn({ btn }) {
-  return (
-    <Button fontSize={1.8} className={HeroStyle.btn}>
-      {btn.btntext}
-    </Button>
-  );
+  return <Button className={HeroStyle.btn}>{btn.btntext}</Button>;
 }

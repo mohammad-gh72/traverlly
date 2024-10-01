@@ -2,7 +2,7 @@ import { useRef, useState } from "react";
 import TestimonialStyle from "./Testimonial.module.css";
 import { useEffect } from "react";
 
-const url = "http://localhost:9000/testimonial";
+const url = "";
 
 function Testimonial() {
   const [testimonialData, setTestimonialData] = useState(null);
@@ -10,13 +10,16 @@ function Testimonial() {
   const sliderContainerRef = useRef(null);
   async function getTestimonialData() {
     try {
-      const response = await fetch(url);
+      const response = await fetch(url, {
+        headers: {},
+      });
       if (!response.ok) {
         throw new Error("something went wrong!");
       }
 
       const data = await response.json();
-      setTestimonialData(data);
+
+      setTestimonialData(data.record.testimonial);
     } catch (error) {
       console.log(error.message);
     }
