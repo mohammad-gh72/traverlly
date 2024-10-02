@@ -8,7 +8,9 @@ function Navbar() {
   const [toggleMenueBetweenViews, setToggleMenueBetweenViews] = useState(false);
   async function loadMenueItems() {
     try {
-      const response = await fetch(url, {});
+      const response = await fetch(url, {
+        headers: {},
+      });
       if (!response.ok) {
         throw new Error("something went wrong");
       }
@@ -31,6 +33,7 @@ function Navbar() {
         setToggleMenueBetweenViews(false);
       }
     };
+    resizeFn();
 
     window.addEventListener("resize", resizeFn);
 
